@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WebApi.Domain;
+using MVC.Domain;
 
-namespace WebApi.Business.Interface
+namespace MVC.Business.Interface
 {
     public interface IReportBusiness
     {

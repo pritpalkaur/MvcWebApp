@@ -14,7 +14,7 @@ public class Program
             .WriteTo.Console()
             .WriteTo.File("Logs/log.txt", rollingInterval: RollingInterval.Day)
             .WriteTo.MSSqlServer(
-                connectionString: "WebApiApplicationDbContextconstrg",
+                connectionString: "MVCApplicationDbContextconstrg",
                 sinkOptions: new MSSqlServerSinkOptions { TableName = "LogTable", AutoCreateSqlTable = true },
                 columnOptions: new ColumnOptions()) // Add any specific column options if needed
             .CreateLogger();
@@ -54,7 +54,7 @@ public class Program
 //using Microsoft.Extensions.DependencyInjection;
 //using Microsoft.Extensions.Hosting;
 //using Microsoft.EntityFrameworkCore;
-//using webapitaskup.Models;
+//using MVCtaskup.Models;
 
 
 //var builder = WebApplication.CreateBuilder(args);

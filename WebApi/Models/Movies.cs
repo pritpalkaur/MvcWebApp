@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace WebApi.Models
+namespace MVC.Models
 {
     public class Movies
     {

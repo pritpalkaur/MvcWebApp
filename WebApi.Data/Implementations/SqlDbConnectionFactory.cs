@@ -5,9 +5,9 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WebApi.Data.Interface;
+using MVC.Data.Interface;
 
-namespace WebApi.Data.Implementations
+namespace MVC.Data.Implementations
 {
     public class SqlDbConnectionFactory : IDbConnectionFactory
     {
@@ -15,7 +15,7 @@ namespace WebApi.Data.Implementations
 
         public SqlDbConnectionFactory(IConfiguration configuration)
         {
-            _connectionString = configuration.GetConnectionString("WebApiApplicationDbContextconstrg");
+            _connectionString = configuration.GetConnectionString("MVCApplicationDbContextconstrg");
         }
 
         public SqlConnection CreateConnection()

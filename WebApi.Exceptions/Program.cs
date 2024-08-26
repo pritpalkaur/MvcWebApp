@@ -3,7 +3,7 @@ using Microsoft.Extensions.Hosting;
 using Serilog;
 using Serilog.Sinks.MSSqlServer;
 using System.Collections.ObjectModel;
-using WebApi.Exceptions;
+using MVC.Exceptions;
 
 public class Program
 {

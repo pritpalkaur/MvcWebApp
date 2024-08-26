@@ -4,11 +4,11 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using WebApi.Data.Interface;
-using WebApi.Domain;
+using MVC.Data.Interface;
+using MVC.Domain;
 using System.Data.SqlClient;
 
-namespace WebApi.Data.Implementations
+namespace MVC.Data.Implementations
 {
     public class ReportDatabase : IReportDatabase
     {

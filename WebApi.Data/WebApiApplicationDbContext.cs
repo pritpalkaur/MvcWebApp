@@ -1,13 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
-using WebApi.Domain;
+using MVC.Domain;
 
-namespace WebApi.Data
+namespace MVC.Data
 {
-    public partial class WebApiApplicationDbContext : IdentityDbContext
+    public partial class MVCApplicationDbContext : IdentityDbContext
     {
-        public WebApiApplicationDbContext(DbContextOptions<WebApiApplicationDbContext> options) : base(options)
+        public MVCApplicationDbContext(DbContextOptions<MVCApplicationDbContext> options) : base(options)
         {
         }
 

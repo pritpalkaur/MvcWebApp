@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WebApi.Data.Interface
+namespace MVC.Data.Interface
 {
     public interface IDbConnectionFactory
     {

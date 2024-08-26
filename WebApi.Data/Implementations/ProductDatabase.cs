@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WebApi.Domain;
+using MVC.Domain;
 using Microsoft.EntityFrameworkCore;
-using WebApi.Data.Interface;
+using MVC.Data.Interface;
 
-namespace WebApi.Data.Implementations
+namespace MVC.Data.Implementations
 {
        public class ProductDatabase : IProductDatabase
         {
-            private readonly WebApiApplicationDbContext _context;
-            public ProductDatabase(WebApiApplicationDbContext context)
+            private readonly MVCApplicationDbContext _context;
+            public ProductDatabase(MVCApplicationDbContext context)
             {
                 _context = context;
             }

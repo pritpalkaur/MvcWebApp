@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WebApi.Business;
-using WebApi.Business.Interface;
-using WebApi.Domain;
-using WebApi.Data;
-using WebApi.Data.Interface;
+using MVC.Business;
+using MVC.Business.Interface;
+using MVC.Domain;
+using MVC.Data;
+using MVC.Data.Interface;
 
-namespace WebApi.Business.Implementations
+namespace MVC.Business.Implementations
 {
     public class ReportBusiness : IReportBusiness
     {

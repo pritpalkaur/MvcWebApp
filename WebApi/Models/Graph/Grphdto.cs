@@ -1,4 +1,4 @@
-﻿namespace webapitaskup.Models.Graph
+﻿namespace MVCtaskup.Models.Graph
 {
     
     public class ChartsDataDto

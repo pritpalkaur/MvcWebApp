@@ -5,14 +5,14 @@ using System.Linq;
 using System.Reflection;
 using System.Text.RegularExpressions;
 
-namespace WebApi.Data.Helpers
+namespace MVC.Data.Helpers
 {
     public class DataUtilities
     {
 
-        private readonly WebApiApplicationDbContext _context;
+        private readonly MVCApplicationDbContext _context;
 
-        public DataUtilities(WebApiApplicationDbContext context)
+        public DataUtilities(MVCApplicationDbContext context)
         {
             _context = context;
         }

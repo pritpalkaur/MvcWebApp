@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace WebApi.Models
+namespace MVC.Models
 {
     public class AppDbContext : DbContext
     {

@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using WebApi.Business.Interface;
-using WebApi.Exceptions.Service;
+using MVC.Business.Interface;
+using MVC.Exceptions.Service;
 
-namespace WebApi.Controllers
+namespace MVC.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

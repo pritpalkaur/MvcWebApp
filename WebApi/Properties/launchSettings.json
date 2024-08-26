@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "webapi": {
+    "MVC": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

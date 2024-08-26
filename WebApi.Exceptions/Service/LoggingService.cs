@@ -1,9 +1,9 @@
-﻿using WebApi.Exceptions;
-using WebApi.Exceptions.Data;
-using WebApi.Exceptions.Service;
+﻿using MVC.Exceptions;
+using MVC.Exceptions.Data;
+using MVC.Exceptions.Service;
 using Microsoft.Extensions.Logging;
 
-namespace WebApi.Exceptions.Service
+namespace MVC.Exceptions.Service
 {
     public class LoggingService : ILoggingService
     {

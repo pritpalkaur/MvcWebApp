@@ -1,4 +1,4 @@
-﻿namespace WebApi.Interface
+﻿namespace MVC.Interface
 {
     public interface IErrorLogger
     {

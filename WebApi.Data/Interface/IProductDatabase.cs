@@ -3,10 +3,10 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using WebApi.Domain;
+using MVC.Domain;
 using Microsoft.EntityFrameworkCore;
 
-namespace WebApi.Data.Interface
+namespace MVC.Data.Interface
 {
     public interface IProductDatabase
     {

@@ -1,14 +1,14 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using WebApi.Interface;
+using MVC.Interface;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Authorization;
-using WebApi.Models;
-using WebApi.Business;
-using WebApi.Business.Interface;
-using WebApi.Exceptions.Service;
+using MVC.Models;
+using MVC.Business;
+using MVC.Business.Interface;
+using MVC.Exceptions.Service;
 
-namespace WebApi.Controllers
+namespace MVC.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

@@ -1,7 +1,7 @@
-﻿using WebApi.Exceptions.Service;
-using WebApi.Exceptions.Data;
+﻿using MVC.Exceptions.Service;
+using MVC.Exceptions.Data;
 
-namespace WebApi.Exceptions.Service
+namespace MVC.Exceptions.Service
 {
     public interface ILoggingService
     {

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace WebApi.Exceptions.Data
+namespace MVC.Exceptions.Data
 {
     public class LoggingDbContext : DbContext
     {

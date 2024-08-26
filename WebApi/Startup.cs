@@ -7,18 +7,18 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using webapitaskup.Models;
-using WebApi.Business.Interface;
-using WebApi.Business.Implementations;
-using WebApi.Data.Interface;
-using WebApi.Data.Implementations;
-using WebApi.Data;
-using WebApi.Exceptions.Service;
+using MVCtaskup.Models;
+using MVC.Business.Interface;
+using MVC.Business.Implementations;
+using MVC.Data.Interface;
+using MVC.Data.Implementations;
+using MVC.Data;
+using MVC.Exceptions.Service;
 using Microsoft.Extensions.Logging;
 using Serilog.Extensions.Logging.File;
 using Serilog;
-using WebApi.Exceptions.Data;
-using WebApi.Data.Implementations;
+using MVC.Exceptions.Data;
+using MVC.Data.Implementations;
 public class Startup
 {
     public Startup(IConfiguration configuration)
@@ -80,8 +80,8 @@ public class Startup
 =======
      
 
-        services.AddDbContext<WebApiApplicationDbContext>(options =>
-           options.UseSqlServer(Configuration.GetConnectionString("WebApiApplicationDbContextconstrg")));
+        services.AddDbContext<MVCApplicationDbContext>(options =>
+           options.UseSqlServer(Configuration.GetConnectionString("MVCApplicationDbContextconstrg")));
         services.AddDbContext<LoggingDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("ExContextconstrg")));
 
@@ -102,7 +102,7 @@ public class Startup
             loggingBuilder.AddConsole();
             //loggingBuilder.AddFilter("Logs/app.log"); // Requires a third-party package like Serilog.Extensions.Logging.File
         });
->>>>>>> main:WebApi/Startup.cs
+>>>>>>> main:MVC/Startup.cs
 
         services.AddCors(options =>
         {

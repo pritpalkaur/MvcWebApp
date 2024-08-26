@@ -7,9 +7,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WebApi.Exceptions.Service;
+using MVC.Exceptions.Service;
 
-namespace WebApi.Exceptions
+namespace MVC.Exceptions
 {
     public class Startup
     {

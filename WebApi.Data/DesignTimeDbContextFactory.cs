@@ -4,41 +4,41 @@ using Microsoft.Extensions.Configuration;
 using System.IO;
 using System.Diagnostics;
 
-namespace WebApi.Data
+namespace MVC.Data
 {
-    public class DesignTimeDbContextFactory : IDesignTimeDbContextFactory<WebApiApplicationDbContext>
+    public class DesignTimeDbContextFactory : IDesignTimeDbContextFactory<MVCApplicationDbContext>
 {
-    public WebApiApplicationDbContext CreateDbContext(string[] args)
+    public MVCApplicationDbContext CreateDbContext(string[] args)
     {
         string mainPath = Path.GetFullPath(Path.Combine(System.Environment.CurrentDirectory, @"..\"));
-        string folderPath = @"WebApi.NetCore\"; // Ensure this path is correct
-        var builder = new DbContextOptionsBuilder<WebApiApplicationDbContext>();
+        string folderPath = @"MVC.NetCore\"; // Ensure this path is correct
+        var builder = new DbContextOptionsBuilder<MVCApplicationDbContext>();
 
         IConfigurationRoot configuration = new ConfigurationBuilder()
             .SetBasePath(mainPath + folderPath)
             .AddJsonFile("appsettings.json")
             .Build();
 
-        builder.UseSqlServer(configuration.GetConnectionString("WebApiApplicationDbContextconstrg"));
-        return new WebApiApplicationDbContext(builder.Options);
+        builder.UseSqlServer(configuration.GetConnectionString("MVCApplicationDbContextconstrg"));
+        return new MVCApplicationDbContext(builder.Options);
     }
 }
 }
-//namespace WebApi.Data
+//namespace MVC.Data
 //{
-//    public class DesignTimeDbContextFactory : IDesignTimeDbContextFactory<WebApiApplicationDbContext>
+//    public class DesignTimeDbContextFactory : IDesignTimeDbContextFactory<MVCApplicationDbContext>
 //    {
-//        public WebApiApplicationDbContext CreateDbContext(string[] args)
+//        public MVCApplicationDbContext CreateDbContext(string[] args)
 //        {
 //            string mainPath = Path.GetFullPath(Path.Combine(System.Environment.CurrentDirectory, @"..\"));
 //            string folderPath = @"mMoser.Web.NetCore\";
-//            var builder = new DbContextOptionsBuilder<WebApiApplicationDbContext>();
+//            var builder = new DbContextOptionsBuilder<MVCApplicationDbContext>();
 //            IConfigurationRoot configuration = new ConfigurationBuilder()
 //            .SetBasePath(mainPath + folderPath)
 //            .AddJsonFile("appsettings.json")
 //            .Build();
-//            builder.UseSqlServer(configuration.GetConnectionString("WebApiApplicationDbContextconstrg"));
-//            return new WebApiApplicationDbContext(builder.Options);
+//            builder.UseSqlServer(configuration.GetConnectionString("MVCApplicationDbContextconstrg"));
+//            return new MVCApplicationDbContext(builder.Options);
 //        }
 //    }
 //}

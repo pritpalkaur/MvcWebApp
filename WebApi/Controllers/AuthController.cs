@@ -28,7 +28,7 @@ public class AuthController : ControllerBase
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using WebApi.Models;
+using MVC.Models;
 
 [Route("api/[controller]")]
 [ApiController]
@@ -100,7 +100,7 @@ public class UserLogin
 //using System.IdentityModel.Tokens.Jwt;
 //using System.Security.Claims;
 //using System.Text;
-//using webapi.Models;
+//using MVC.Models;
 
 //[Route("api/[controller]")]
 //[ApiController]

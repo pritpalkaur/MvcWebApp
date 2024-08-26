@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
 using System.Threading.Tasks;
-using WebApi.Models; 
+using MVC.Models; 
 
-namespace WebApi.Controllers
+namespace MVC.Controllers
 {
         [Route("api/[controller]")]
         [ApiController]
