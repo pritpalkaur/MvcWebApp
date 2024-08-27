@@ -30,7 +30,23 @@ namespace MVC.Data.Implementations
                 var result = await _context.Products.ToListAsync();
                 return result;
             }
+        public async Task<List<Products>> AddProductAsync(Products product)
+        {
+            try
+            {
+                _context.Products.Add(product);
+                await _context.SaveChangesAsync();
 
-        }
+                // Return the updated list of products
+                return await _context.Products.ToListAsync();
+            }
+                catch (Exception ex)
+                {
+                    // Handle the exception as needed, for example logging it
+                    throw;
+                }
+            }
+    }
+    
  }
 

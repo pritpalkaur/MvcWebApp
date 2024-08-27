@@ -10,5 +10,6 @@ namespace MVC.Business.Interface
     public interface IProductBusiness
     {
         Task<List<Products>> GetProductsAsync();
+        Task<List<Products>> AddProductAsync(Products products);
     }
 }

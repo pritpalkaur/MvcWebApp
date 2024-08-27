@@ -11,5 +11,6 @@ namespace MVC.Data.Interface
     public interface IProductDatabase
     {
         Task<List<Products>> GetProductsAsync();
+        Task<List<Products>> AddProductAsync(Products products);
     }
 }

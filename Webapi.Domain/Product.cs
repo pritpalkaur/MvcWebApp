@@ -18,7 +18,7 @@ namespace MVC.Domain
         [Column("product_name")]
         public string ProductName { get; set; }
         [Column("product_description")]
-        public string ProuctDescription { get; set; }
+        public string ProductDescription { get; set; }
         [Column("created_by")]
         [StringLength(50)]
         public string CreatedBy { get; set; }
