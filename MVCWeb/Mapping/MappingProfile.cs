@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using MVC.Domain;
 using MVCWeb.Models;
+using MVCWeb.Models.Reports;
 
 namespace MVCWeb.Mapping
 {
@@ -9,6 +10,7 @@ namespace MVCWeb.Mapping
         public MappingProfile()
         {
             CreateMap<Products, ProductViewModel>();
+            CreateMap<Report, ReportsViewModel>();
         }
     }
 }

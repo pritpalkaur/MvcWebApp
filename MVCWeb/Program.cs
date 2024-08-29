@@ -24,8 +24,14 @@ public class Program
             options.UseSqlServer(builder.Configuration.GetConnectionString("LoggingDbContextconstrg"))); // Register LoggingDbContext
 
         // Register other services
+        builder.Services.AddScoped<IDbConnectionFactory, SqlDbConnectionFactory>();
+        //---------------------product----------------------------
         builder.Services.AddScoped<IProductDatabase, ProductDatabase>();
         builder.Services.AddScoped<IProductBusiness, ProductBusiness>();
+        //----------------------Reports----------------------------------------
+        builder.Services.AddScoped<IReportBusiness,ReportBusiness>();
+        builder.Services.AddScoped<IReportDatabase, ReportDatabase>();
+
         builder.Services.AddScoped<ILoggingService, LoggingService>(); // Add this line
         builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
